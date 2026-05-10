@@ -60,6 +60,7 @@ def main():
         print(f"Error: Invalid JSON input: {e}", file=sys.stderr)
         # Exit code 1 shows stderr to the user but not to Claude
         sys.exit(1)
+    
 
     tool_name = input_data.get("tool_name", "")
     if tool_name != "Bash":
